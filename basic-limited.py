@@ -1,3 +1,7 @@
+"""
+Basic-limited file. Generates standard unencrypted save code with user input.
+This is the first stable version of the unnamed save code system.
+"""
 import random
 import time
 import os

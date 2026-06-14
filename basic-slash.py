@@ -14,7 +14,12 @@ while True:
     mode = input("Enter mode (read/write/help): ").lower()
 
     if mode == "write":
-        pass
+        key_string = input("Enter desired key: ")
+        key = key_string.split("/")
+        
+        savecode = "/".join([input(f"Enter value for {k}: ") for k in key])
+        
+        print(f"Save code: {savecode}")
     elif mode == "read":
         
         key_string = input("Enter key: ")
@@ -27,7 +32,7 @@ while True:
             print(f"Note: entered code has {len(split_code) - len(key)} more blocks than the key. Only the first {len(key)} blocks will be read.")
         
         for k, val in zip(key, split_code):
-            print(f"{k}: {val}\n")
+            print(f"{k}: {val}")
     elif mode == "help":
         print("""Help:
               This program generates and reads slash-separated save codes. 

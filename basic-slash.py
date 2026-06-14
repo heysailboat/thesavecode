@@ -17,7 +17,7 @@ while True:
         pass
     elif mode == "read":
         
-        key_string = input("Enter key:")
+        key_string = input("Enter key: ")
         key = key_string.split("/")
         
         code = input("Enter save code: ")

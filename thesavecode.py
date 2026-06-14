@@ -25,7 +25,6 @@ def load(seconds):
 		print("Loading...")
 		time.sleep(0.1)
 
-load(5)
 os.system('clear')
 mode = input("Enter mode (read/write): ").lower()
 
